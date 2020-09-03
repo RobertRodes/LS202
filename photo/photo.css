@@ -26,7 +26,7 @@ h1 {
 }
 
 img {
-  border: 1px solid gold;
+  border: 1px solid #ffdd1a;
   width: 100%;
 }
 
@@ -115,6 +115,11 @@ header {
 }
 
 @media screen and (min-width: 1280px) {
+  figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
   .main-photo {
     max-width: 950px;
   }
