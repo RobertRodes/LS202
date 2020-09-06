@@ -25,9 +25,13 @@ header img {
   padding-left: 1px;
 }
 
-main {
-  width: 1000px;
+main, footer {
+  min-width: 550px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+main {
   padding: 70px 90px 45px;
   background-color: white;
 }
@@ -69,8 +73,6 @@ p {
 }
 
 footer {
-  width: 1000px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   padding: 33px 0;
