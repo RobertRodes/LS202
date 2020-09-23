@@ -1,64 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <meta charset="utf-8">
   <style>
-    * {
-      font-family: Helvetica;
-      box-sizing: border-box;
+    .section-title {
+      display: inline-block;
+      font-size: 2em;
+      text-align: center;
+      padding-bottom: 1.5%;
+      font-size: 2em;
+      transform: translateX(0%) translateY(-25%);
+      /* z-index: -1; */
     }
 
-    body {
-      background-color: grey;
+    .section-title-highlight {
+      color: black;
     }
 
-    .call-outs-container {
-      max-width: 1400px;
-      margin: 40px auto 0 auto;
+    .section-title-highlight:before {
+      content: '';
+      display: inline-block;
+      height: 20px;
+      width: 100%;
+      background: #35FCCE;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: height .7s;
+      z-index: -1;
+    }
+
+    .section-title-highlight:hover:before {
+      height: 85%;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: default;
+    }
+
+    .container {
+      padding: 3% 5% 7%;
+      margin: 0 5% 5%;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(236, 236, 236);
     }
 
-    .call-out {
-      padding: 20px;
-      flex-basis: 30%;
+    .container-item {
+      display: flex;
+      flex-direction: column;
     }
 
-    .call-out:nth-child(1) {
-      background-color: #c0dbe2;
-      order: 1;
-    }
+    #projects {
+      height: 600px;
+      position: relative;
+    }  
 
-    .call-out:nth-child(2) {
-      background-color: #cdf1c3;
-      order: 3;
+    .projects-header {
+      text-align: center;
     }
-
-    .call-out:nth-child(3) {
-      background-color: #ccb9da;
-      order: 2;
-    }
-
   </style>
 </head>
 <body>
-  <div class="call-outs-container">
-    <div class="call-out">
-      <h4>Feature 1</h4>    
-      <p>
-        Ac felis donec et odio pellentesque. Placerat vestibulum lectus mauris ultrices eros in cursus. Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Purus gravida quis blandit turpis cursus in hac habitasse platea. Montes nascetur ridiculus mus mauris vitae ultricies. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Nisl pretium fusce id velit ut tortor pretium. Sit amet consectetur adipiscing elit. In est ante in nibh mauris. Amet risus nullam eget felis eget. Placerat in egestas erat imperdiet sed euismod nisi porta. Nisl pretium fusce id velit ut tortor pretium.
-      </p>
-    </div>
-    <div class="call-out">
-      <h4>Feature 2</h4>    
-      <p>
-        Orci a scelerisque purus semper eget duis at tellus at. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Lacus laoreet non curabitur gravida. Egestas pretium aenean pharetra magna ac placerat. Ultrices in iaculis nunc sed augue. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Ipsum suspendisse ultrices gravida dictum fusce ut. Morbi leo urna molestie at elementum eu facilisis. Amet commodo nulla facilisi nullam. Aenean euismod elementum nisi quis eleifend quam. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Diam maecenas sed enim ut sem viverra. Nulla at volutpat diam ut venenatis.
-      </p>
-    </div>
-    <div class="call-out">
-      <h4>Feature 3</h4>    
-      <p>
-        Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Etiam non quam lacus suspendisse faucibus interdum. Volutpat est velit egestas dui. Suscipit adipiscing bibendum est ultricies integer quis auctor. Sociis natoque penatibus et magnis dis parturient. Commodo ullamcorper a lacus vestibulum sed arcu non. Congue nisi vitae suscipit tellus mauris a diam maecenas. Sagittis id consectetur purus ut faucibus pulvinar elementum. Fermentum dui faucibus in ornare. Facilisi morbi tempus iaculis urna id volutpat lacus.
-      </p>
+  <div class="container">
+    <div id="projects">
+      <div class="projects-header">
+        <a href="#" class="section-title-highlight section-title">Projects</a>
+      </div>
+      <div class="container-item">
+        <p>
+          This is more text in the paragraph.
+        </p>
+      </div>
     </div>
   </div>
 </body>

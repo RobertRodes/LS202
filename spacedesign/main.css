@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font: normal 20px Avenir, Helvetica, sans-serif;  
+  background-color: #dedede;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #fefefe;
+  text-align: center;
+  line-height: 28px;
+  width: 1200px;
+}
+
+/* Header and Nav settings */
+
+header {
+  background-image: url("./images/bg_body.gif");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  display: block;
+  padding-top: 133px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+nav {
+  padding: 40px 0 41px;
+  margin-left: -19px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 26px;
+  color: #cacaca;
+  text-decoration: none;
+}
+
+nav a.selected {
+  font-weight: 800;
+  color: #6db9ff;
+}
+
+/* Main settings */
+
+main {
+  padding: 102px 90px 45px;
+  background-color: white;
+}
+
+
+article {
+  padding: 14px 88px 38px 88px;
+  margin: 0 auto;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+article.project img {
+  margin: 0 0 20px -78px;
+}
+
+h2 {
+  padding: 20px 0;
+  font-size: 36px;
+  line-height: 28px;
+  color: #45494d;
+  text-align: center;
+}
+
+h2::before, h2::after {
+  content: "•";
+  font-size: 27px;
+}
+
+h2::before {
+  padding: 0 27px 0 25px;
+  vertical-align: 2px;
+}
+
+h2::after {
+  padding: 0 27px 0 23px;
+  vertical-align: 2px;
+}
+
+h3 {
+  margin: 18px 0 10px -4px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #3e59b2;
+}
+
+h2 + p {
+  padding-top: 24px;
+}
+
+p {
+  padding: 2px 12px 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #45494d;
+  font-weight: 500;
+}
+
+/* Project page settings */
+
+article.project p {
+  padding: 2px 13px 0;
+}
+
+/* Team page settings */
+
+article.team p {
+  margin-left: 4px;
+}
+
+article.team figcaption {
+  padding: 20px;
+  font-size: 24px;
+  color: #3e59b2;
+}
+
+div.team-photos {
+  padding: 128px 0 110px;
+  display: flex;
+  justify-content: center;
+  column-gap: 60px; 
+}
+
+div.team-photos figure {
+  display: inline-block;
+}
+
+/* Footer settings */
+
+footer {
+  background-color: #e7e7e7;
+  padding: 35px 0 78px;
+}
+
+footer .social-media-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 124px;
+}
+
+footer p {
+  margin: 45px 0 38px;
+  color: #b2b2b2;
+}
+
+footer a {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  background: url("./images/icons_social-media.png") no-repeat;
+}
+
+a.twitter {
+  background-position: 0 0;
+}
+
+a.facebook {
+  background-position: 0 -46px;
+}
+
+a.email {
+  background-position: 0 -92px;
+}
+
+a.instagram {
+  background-position: 0 -138px;
+}
+
