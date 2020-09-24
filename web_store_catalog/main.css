@@ -69,10 +69,6 @@ input:checked + figure::before {
   content: "";
 }
 
-input:checked + figure {
-  padding-top: 144px;
-}
-
 input:checked + figure img {
   max-height: none;
   width: 400px;
@@ -80,6 +76,13 @@ input:checked + figure img {
   top: 100px;
   left: 50%;
   margin-left: -200px;
+  z-index: 2;
+}
+
+input:checked + figure figcaption {
+  position: relative;
+  top: 145px;
+  z-index: 1;
 }
 
 [type="checkbox"] {
