@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ffd900;
+}
+
+header, main {
+  width: 900px;
+}
+
+header {
+  margin: 0 auto 30px;
+  padding: 30px 25px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: #0079c4;
+  color: #ffffff;
+}
+
+main {
+  margin: 0 auto 40px;
+  padding: 25px;
+  background-color: #ececec;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 17px;
+  align-content: flex-end;
+}
+
+.item {
+  display: inline-block;
+  padding-top: 15px;
+  margin-bottom: 17px;
+  flex-basis: 23.5%;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+img {
+  max-height: 140px;
+  width: auto;
+}
+
+figcaption {
+  padding: 16px 15px 15px;
+  text-align: left;
+}
+
+input:checked + figure::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.4;
+  content: "";
+}
+
+input:checked + figure {
+  padding-top: 144px;
+}
+
+input:checked + figure img {
+  max-height: none;
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
