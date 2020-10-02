@@ -3,78 +3,25 @@
 <head>
   <meta charset="utf-8">
   <style>
-    .section-title {
-      display: inline-block;
-      font-size: 2em;
-      text-align: center;
-      padding-bottom: 1.5%;
-      font-size: 2em;
-      transform: translateX(0%) translateY(-25%);
-      /* z-index: -1; */
-    }
-
-    .section-title-highlight {
-      color: black;
-    }
-
-    .section-title-highlight:before {
-      content: '';
-      display: inline-block;
-      height: 20px;
-      width: 100%;
-      background: #35FCCE;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: height .7s;
-      z-index: -1;
-    }
-
-    .section-title-highlight:hover:before {
-      height: 85%;
-    }
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
     a {
-      text-decoration: none;
-      cursor: default;
+        border: 1px solid black;
+        flex-basis: calc(calc(600px - 100%) * 999);
+        flex-grow: 1;
     }
+}
 
-    .container {
-      padding: 3% 5% 7%;
-      margin: 0 5% 5%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: rgb(236, 236, 236);
-    }
-
-    .container-item {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #projects {
-      height: 600px;
-      position: relative;
-    }  
-
-    .projects-header {
-      text-align: center;
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div id="projects">
-      <div class="projects-header">
-        <a href="#" class="section-title-highlight section-title">Projects</a>
-      </div>
-      <div class="container-item">
-        <p>
-          This is more text in the paragraph.
-        </p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+  <a href="#">One</a>
+  <a href="#">Two</a>
+</div>
 </body>
 </html>
